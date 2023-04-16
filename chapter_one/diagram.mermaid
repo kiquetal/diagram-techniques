@@ -3,5 +3,8 @@ classDiagram
     Title *-- Season
     Title *-- Review
     Title o-- Actor
-    Season *-- Episode
 
+
+    TV Show --|> Title
+    Short --|> Title
+    Film --|> Title

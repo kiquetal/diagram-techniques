@@ -29,3 +29,12 @@ classDiagram
     Season *-- Episode
 
 ```
+
+- **Inheritance**: 
+For example Title is an abstract term deliberately
+
+```mermaid
+classDiagram
+    TV Show --|> Title
+    Short -- |> Title
+```
