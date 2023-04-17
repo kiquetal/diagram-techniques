@@ -6,8 +6,8 @@ exists completely independently of one another.
 
 Example: Teacher and Student
 
-- **Aggregation**: There's more relantionship between the entities
-than an association, but they can still exist independetely
+- **Aggregation**: There's more relationship between the entities
+than an association, but they can still exist independently
 of one another. There's an owner of the relationship,but if
 the parent is deleted, the child can still remain.
 

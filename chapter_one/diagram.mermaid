@@ -1,12 +1,21 @@
+---
+title: Streamy domain
+---
 classDiagram
-    Title -- Genre
-    Title *-- Season
-    Title *-- Review
-    Title o-- Actor
+    %% Added to improve readability
+    Title "1..*" -- "1..*" Genre: is associated with
+    Title: \n\n
+    Title  "1" *-- "0..*" Season: has
+    Title "1" *-- "0..*" Review: has
+    Title "0..*" o-- "1..*" Actor: feature
 
 
-    TV Show --|> Title
-    Short --|> Title
-    Film --|> Title
+    TV Show --|> Title: implements
+    Short --|> Title: implements
+    Film --|> Title: implements
 
-    Episode *-- Review
+    Season "1" *-- "0..*" Review: has
+    Season "1" *-- "1..*"Episode: contains
+    Episode "1"*-- "0..*" Review: has
+
+    Viewer "0..*" --> "0..*" Title: watches
