@@ -4,11 +4,10 @@ title: Streamy domain
 classDiagram
     %% Added to improve readability
     Title "1..*" -- "1..*" Genre: is associated with
-    Title: \n\n
+    Title: \n
     Title  "1" *-- "0..*" Season: has
     Title "1" *-- "0..*" Review: has
     Title "0..*" o-- "1..*" Actor: feature
-
 
     TV Show --|> Title: implements
     Short --|> Title: implements
@@ -18,4 +17,5 @@ classDiagram
     Season "1" *-- "1..*"Episode: contains
     Episode "1"*-- "0..*" Review: has
 
-    Viewer "0..*" --> "0..*" Title: watches
+    Viewer "0..*" --> " 0..*" Title: watches
+
